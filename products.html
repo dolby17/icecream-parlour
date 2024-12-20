@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Ice Creams</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            margin: 40px 0;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #cbd5e0;
+            line-height: 1.6;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #8e44ad;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        .featured-product {
+            display: flex;
+            gap: 30px;
+            margin: 50px 0;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .featured-image {
+            flex: 1;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .featured-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .featured-content h2 {
+            margin-bottom: 15px;
+        }
+
+        .featured-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>We Pride Ourselves On Exceptional Flavors.</h1>
+            <p>The nearly -200°C (-328°F) liquid freezes the ingredients—sweet cream, flavoring, and handpicked mix-ins—almost instantaneously, creating tiny ice crystals and a smooth texture.</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="ice cream honey.png" alt="Ice Cream Honey">
+                <p class="price">₹499</p>
+                <h3 class="product-title">Ice cream honey</h3>
+                <button class="buy-button">BUY</button>
+            </div>
+
+            <div class="product-card">
+                <img src="chocho delighty.png" alt="Choco delight">
+                <p class="price">₹399</p>
+                <h3 class="product-title">Choco delight</h3>
+                <button class="buy-button">BUY</button>
+            </div>
+
+            <div class="product-card">
+                <img src="carnival strawberry ice cream.png" alt="Carnival strawberry">
+                <p class="price">₹899</p>
+                <h3 class="product-title">Carnival strawberry</h3>
+                <button class="buy-button">BUY</button>
+            </div>
+        </div>
+
+        <div class="featured-product">
+            <div class="featured-image">
+                <img src="Strawberry Special icecream.png" alt="Strawberry Special">
+            </div>
+            <div class="featured-content">
+                <h2>Stress out? Try eating our ice cream.</h2>
+                <p>The nearly -200°C (-328°F) liquid freezes the ingredients—sweet cream, flavoring, and handpicked mix-ins—almost instantaneously, creating tiny ice crystals and a smooth texture.</p>
+                <p class="price">₹799</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
